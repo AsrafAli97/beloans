@@ -11,7 +11,7 @@
     #Nav {
         display: block;
         width: 100%;
-        z-index: 9;
+        z-index: 9999999!important;
         transition: all 1s;
     }
 
@@ -32,6 +32,7 @@
 
     .boxRight{
         display: flex;
+        justify-content: center;
     }
     
     .boxLeftContent{
@@ -89,14 +90,15 @@
 
     .imgWrapper{
         display: flex;
-        justify-content: end;
+        justify-content: center;
+        /*border: 1px solid red;*/
     }
 
     .imgWrapper img{
         position: relative;
-        left: 20%;
+        /*left: 30%;*/
         margin-top: 0;
-        width: auto;
+        width: 270px;
     }
     
     .hamburger{
@@ -144,9 +146,10 @@
         background-color: #ffffff;
         width: 100%;
         padding-bottom: 5px;
+        /*position: absolute;*/
+        /*transition: all 1s;*/
     }
 
-    
     .pattern{
         height: 400px;
         width: 400px;
@@ -155,7 +158,7 @@
         position: sticky;
         top: 50%;
         left: 100%;
-        transform: translate(15%,-29%);
+        transform: translate(15%,-20%);
         
     }
 
@@ -187,7 +190,7 @@
         right: -35%;
         display: block;
         transition: all 0.2s linear;
-        z-index: 99;
+        z-index: 99999999!important;
     }
 
     .btnWrapper {
