@@ -146,6 +146,7 @@
         padding-bottom: 5px;
     }
 
+    
     .pattern{
         height: 400px;
         width: 400px;
@@ -154,8 +155,8 @@
         position: sticky;
         top: 50%;
         left: 100%;
-        transform: translate(15%,-20%);
-        z-index: -1;
+        transform: translate(15%,-29%);
+        
     }
 
     .patternContainer{
