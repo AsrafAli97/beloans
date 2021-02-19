@@ -99,6 +99,8 @@
         /*left: 30%;*/
         margin-top: 0;
         width: 270px;
+        height: fit-content;
+        width: 60%;
     }
     
     .hamburger{
