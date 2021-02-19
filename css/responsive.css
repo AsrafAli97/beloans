@@ -1,0 +1,243 @@
+/* IF SCREEN SIZE LESS THAN 900PX THEN THIS CODE WILL BE EXECUTED */
+@media only screen and (max-width: 900px) {
+
+    .wrapper{
+        background-color: #ffcc07;
+        height: 80vh;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    #Nav {
+        display: block;
+        width: 100%;
+        z-index: 9;
+        transition: all 1s;
+    }
+
+    .hero-section{
+        height: 80vh;
+    }
+
+    .patternContainer{
+        height: 80vh;
+    }
+
+    .hero{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .boxRight{
+        display: flex;
+    }
+    
+    .boxLeftContent{
+        margin-left: 0%;
+        margin-top: 30%;
+    }
+
+    .boxLeft h1{
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 8%;
+
+    }
+
+    /* ONLY FOR DESKTOP VIEW */
+    .boxLeft p{
+        display: none;
+    }
+
+    /* HORIZONTAL LINE BEFORE BUTTON IS ONLY MADE FOR DESKTOP VIEW */
+    .boxLeftbtn::before{
+        display: none;
+    }
+
+    /* ONLY FOR DESKTOP VIEW */
+    .website{
+        display: none;
+    }
+
+    .boxLeftbtn .apply-btn{
+        padding: 1px 9px;
+        font-size: 7px;
+        left: 50%;
+
+    }
+
+    .boxLeftbtn .apply-btn i{
+        margin-left: -6px;
+    }
+
+    .redPopup img {
+        left: 20%;
+        top: 45%;
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .whitePopup img {
+        top: 50%;
+        left: 60%;
+        width: 50px;
+    }
+
+    .imgWrapper{
+        display: flex;
+        justify-content: end;
+    }
+
+    .imgWrapper img{
+        position: relative;
+        left: 20%;
+        margin-top: 0;
+        width: auto;
+    }
+    
+    .hamburger{
+        display: block;
+        position: fixed;
+        top: 1.6%;
+        left: 89%;
+     }
+    
+    .hamburger i{
+        font-size: 25px;
+        padding: 5px;
+            
+    }
+
+    .cross{
+        display: block;
+        
+    }
+    .cross i{
+        font-size: 25px;
+        padding: 5px;
+        color: #ffffff; 
+        position: absolute;
+        left: 80%;
+        top: 3%;
+        display: block;
+    }
+
+
+    .leftNav{
+        display: flex;
+        width: 100%;
+    }
+
+    .logoWrapper{
+        justify-content: end;
+        height: 20%;
+        margin: 0 auto;
+    }
+
+    .totalNav{
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .pattern{
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-color: #ffc207;
+        position: sticky;
+        top: 50%;
+        left: 100%;
+        transform: translate(15%,-20%);
+        z-index: -1;
+    }
+
+    .patternContainer{
+        overflow: hidden;
+    }
+    
+    /* IT CONTAINS RIGHT SIDE BTN OF NAVBAR WHICH IS ONLY FOR DEKSTOP */
+    .rightNav{
+        display: none;
+    }
+
+    .listItem ul{
+        display:  none;
+        color: #ffffff;
+        margin-top: 70px;
+    }
+
+    .wrapper::before{
+        display: none;
+    }
+
+    .listItem {         
+        background-color: #000000f3;
+        height: 100vh;
+        width: 0px;
+        position: absolute;
+        top: -2%;
+        right: -35%;
+        display: block;
+        transition: all 0.2s linear;
+        z-index: 99;
+    }
+
+    .btnWrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8%;
+        margin-top: 25%;
+    }
+
+
+    .listItem ul .mobileBtn button{
+        border: none;
+        outline: none;
+        padding: 13px 65px;
+        border-radius: 25px;
+        background-color: #1d2022;
+        color: #ffffff;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    
+    .listItem ul .mobileBtn i{
+        display: inline-block;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .listItem ul li{
+        width: 100%;
+        margin-left: 11px;
+        z-index: 1;
+        border-bottom: 1px solid #8080801e;
+
+    }
+    .listItem ul li a{
+        color: #dadada;
+        font-size: 14px;
+        line-height: 50px;
+
+    }    
+
+    .totalNav{
+        z-index: 1;
+    }
+
+    .hamburger{
+        z-index: 2;
+    }
+
+   
+  }

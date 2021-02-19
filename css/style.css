@@ -1,0 +1,300 @@
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+.wrapper{
+    background-color: #ffcc07;
+    height: 135.5vh;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: relative;
+
+}
+
+.wrapper::before{
+    content: "";
+    background-image: url("../images/overlay.png");
+    background-repeat: repeat;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 58%;
+    left: 31%;
+    transform: translate(-50%, -30%);
+    z-index: 99;
+}
+
+/* NAVBAR */
+#Nav {
+    display: block;
+    width: 100%;
+    z-index: 99999!important;
+    transition: all 0.5s;
+}
+
+.totalNav{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 3%;
+    
+}
+
+.leftNav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.leftNav .logoWrapper{
+    margin-top: -4px;
+}
+
+
+.listItem ul{
+    display: flex;
+    margin-top: -2%;
+    margin-left: 10px;
+}
+
+/* FOR MOBILE VIEW */
+.mobileBtn{
+    display: none;
+ }
+
+/* FOR MOBILE VIEW */
+.listItem ul .mobileBtn i{
+    display: none;
+}
+
+/* FOR MOBILE VIEW */
+.hamburger{
+    display: none;
+ }
+
+/* FOR MOBILE VIEW */
+ .cross{
+     display: none;
+ }
+ 
+
+
+.listItem ul li{
+    list-style: none;
+    margin-left: 40px;
+    z-index: 1;
+}
+
+.listItem ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #121415;
+}
+
+.rightNav{
+    margin-top: -3%;
+    z-index: 8;
+}
+
+.btnWrapper button{
+    border: none;
+    outline: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    background-color: #121415;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.btnWrapper button .btnIcon{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+
+/* ****************************************************** */
+/* HERO SECTION */
+.pattern{
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    background-color: #ffc207;
+    position: sticky;
+    top: 50%;
+    left: 100%;
+    transform: translate(6.5%,-50%);
+    
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.boxLeftContent{
+    display: block;
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 45%;
+}
+
+.boxLeft h1{
+    font-size: 58px;
+    line-height: 70px;
+    color: #ffffff;
+    margin-bottom: 13%;
+}
+
+.boxLeftbtn{
+ position: relative;
+ margin-bottom: 25%;
+}
+
+.boxLeftbtn::before{
+    position: absolute;
+    content: "";
+    padding: 0px 35px;
+    border: 2px solid black;
+    border-color: rgba(0, 0, 0,.2) transparent transparent transparent;    
+    border-radius: 2px;
+    
+}
+
+.boxLeftbtn button{
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #121415;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-48%,-50%);
+    cursor: pointer;    
+    z-index: 99;
+}
+
+.boxLeftbtn button:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+.fa-arrow-right:before{
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.boxLeftContent p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    color: white;
+}
+
+.imgWrapper{
+    overflow: hidden;
+}
+
+.boxRight{
+    overflow: hidden;
+    height: 135.5vh;
+    margin-left: -2%;
+}
+
+.imgWrapper img{
+    margin-top: 9%;
+    overflow: hidden;
+    object-fit: cover;
+    
+}
+
+/* RIGHT CORNER WEBSITE black box ANIMATION */
+.website{
+    text-align: center;
+    height: 10%;
+    width: 5%;
+    background-color: #121415;
+    color: #F7F7F7;
+    font-size: 10px;
+    position: fixed;
+    top: 75%;
+    left: 92%;
+    transform: translate(60%,-100%);
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+.website p span{
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.website p{
+    animation: websiteAnimation 2s infinite;
+    transition: 5s all;
+}
+
+@keyframes websiteAnimation{
+    0%{
+        opacity:1 ;
+    }
+    50%{
+        opacity:0.2 ;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.redPopup img{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    animation: popup 1s infinite;
+    transition: all 3s ease-in-out; 
+}
+
+.whitePopup img{
+    position: absolute;
+    top: 20%;
+    left: 82%;
+    animation: popup 1s infinite;
+    transition: all 3s ease-in-out; 
+}
+
+@keyframes popup{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.95);
+
+
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
